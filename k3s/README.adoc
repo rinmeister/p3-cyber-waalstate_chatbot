@@ -1,5 +1,5 @@
 Deze directory bevat de kubernetes deployment voor de waalstate_ chatbot applicatie.
-Gebruik deze deployment voor de course fase van de opleiding. Alle studenten
+Gebruik deze deployment voor de herkansing van de course. Alle studenten
 connecten dan naar deze chatbot instantie. We rollen deze deployment in een
 replicaset van 5 uit voor voldoende capaciteit.
 
