@@ -1,5 +1,4 @@
 import socket
-import crypt
 
 HOST = "10.99.4.167"      # aanpassen naar server-IP indien nodig
 PORT = 4242     # aanpassen naar server-poort indien nodig
@@ -31,8 +30,6 @@ def main():
 
     print("Encrypted response ontvangen:")
     print(encrypted_response)
-    decrypted = crypt.decrypt(encrypted_response)
-    print(f"Decrypted response: {decrypted}")
 
 if __name__ == "__main__":
     main()
