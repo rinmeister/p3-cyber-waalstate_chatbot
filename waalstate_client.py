@@ -1,7 +1,7 @@
 import socket
 import crypt
 
-HOST = "127.0.0.1"      # aanpassen naar server-IP indien nodig
+HOST = "10.99.4.167"      # aanpassen naar server-IP indien nodig
 PORT = 4242     # aanpassen naar server-poort indien nodig
 
 QUESTIONS = [

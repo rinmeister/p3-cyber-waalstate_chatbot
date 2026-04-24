@@ -2,21 +2,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: waalstate_chatbot
+  name: waalstate-chatbot
   labels:
-    app: waalstate_chatbot
+    app: waalstate-chatbot
 spec:
   replicas: 5
   selector:
     matchLabels:
-      app: waalstate_chatbot
+      app: waalstate-chatbot
   template:
     metadata:
       labels:
-        app: waalstate_chatbot
+        app: waalstate-chatbot
     spec:
       containers:
-        - name: waalstate_chatbot
+        - name: waalstate-chatbot
           image: rinmeister/p3-cyber-waalstate_chatbot:latest
           ports:
             - containerPort: 4242

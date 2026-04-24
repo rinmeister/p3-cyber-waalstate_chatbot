@@ -3,16 +3,16 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    metallb.universe.tf/address-pool: p3-waalstate_chatbot
-  name: waalstate_chatbot
+    metallb.universe.tf/address-pool: p3-waalstate-chatbot
+  name: waalstate-chatbot
   labels:
-    app: waalstate_chatbot
+    app: waalstate-chatbot
 spec:
   type: LoadBalancer
   ports:
-    - protocol: UDP
+    - protocol: TCP
       port: 4242
       targetPort: 4242
   selector:
-    app: waalstate_chatbot
+    app: waalstate-chatbot
 ---
