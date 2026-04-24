@@ -1,0 +1,19 @@
+Deze directory bevat de kubernetes deployment voor de waalstate_ chatbot applicatie.
+Gebruik deze deployment voor de course fase van de opleiding. Alle studenten
+connecten dan naar deze chatbot instantie. We rollen deze deployment in een
+replicaset van 5 uit voor voldoende capaciteit.
+
+Het is een heel eenvoudige applicatie die verder geen data hoeft op te slaan.
+Hij is daarmee volledig stateless en kan makkelijk opgeschaald worden.
+
+De deployment bestaat uit een pod template met een container die luister op
+poort 4242. Daarnaast is er een service om de pod toegankelijk te maken binnen
+het ISM netwerk.
+
+De deployment kan uitgerold worden met het volgende commando:
+
+----
+kubectl apply -f waalstate_chatbot-deployment.yaml
+kubectl apply -f waalstate_chatbot-service.yaml
+----
+
